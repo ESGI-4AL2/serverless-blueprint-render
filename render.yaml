@@ -13,3 +13,9 @@ databases:
     region: frankfurt
     ipAllowList: # optional (defaults to allow all)
       - source: 0.0.0.0/0
+
+envVars:
+  - key: INTERNAL_DB_URL
+    fromDatabase:
+      name: my-db
+      property: connectionString
