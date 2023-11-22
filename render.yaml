@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: webapi
+    runtime: node
+    repo: https://github.com/ESGI-4AL2/serverless-blueprint-render # optional
+    region: frankfurt # optional (defaults to oregon)
+    plan: free # optional (defaults to starter instance type)
+    branch: main # optional (defaults to master)
+
+databases:
+  - name: prod
+    databaseName: my-db # optional (Render may add a suffix)
+    region: frankfurt
+    ipAllowList: # optional (defaults to allow all)
+      - source: 0.0.0.0/0
