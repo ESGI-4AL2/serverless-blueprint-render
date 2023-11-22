@@ -9,12 +9,12 @@ services:
     envVars:
       - key: INTERNAL_DB_URL
         fromDatabase:
-          name: my-db
+          name: mydb
           property: connectionString
 
 databases:
   - name: prod
-    databaseName: my-db # optional (Render may add a suffix)
+    databaseName: mydb # optional (Render may add a suffix)
     region: frankfurt
     ipAllowList: # optional (defaults to allow all)
       - source: 0.0.0.0/0
