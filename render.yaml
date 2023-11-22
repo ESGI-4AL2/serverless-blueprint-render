@@ -15,8 +15,7 @@ services:
           property: connectionString
 
 databases:
-  - name: prod
-    databaseName: mydb # optional (Render may add a suffix)
+  - name: mydb
+    databaseName: toto # optional (Render may add a suffix)
     region: frankfurt
     plan: free
-    user: user
