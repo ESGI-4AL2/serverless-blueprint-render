@@ -2,6 +2,8 @@ services:
   - type: web
     name: webapi
     runtime: node
+    buildCommand: npm install
+    startCommand: npm start
     repo: https://github.com/ESGI-4AL2/serverless-blueprint-render # optional
     region: frankfurt # optional (defaults to oregon)
     plan: free # optional (defaults to starter instance type)
@@ -17,3 +19,4 @@ databases:
     databaseName: mydb # optional (Render may add a suffix)
     region: frankfurt
     plan: free
+    user: user
