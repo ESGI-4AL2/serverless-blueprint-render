@@ -16,5 +16,4 @@ databases:
   - name: prod
     databaseName: mydb # optional (Render may add a suffix)
     region: frankfurt
-    ipAllowList: # optional (defaults to allow all)
-      - source: 0.0.0.0/0
+    plan: free
